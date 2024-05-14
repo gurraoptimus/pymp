@@ -23,6 +23,8 @@ self.setPalette(p)
 def create_player(self):
 
 
+
+
 app = QApplication(sys.argv)
 window = Window()
 window.show()
