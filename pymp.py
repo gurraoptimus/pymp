@@ -22,6 +22,14 @@ class Window(QWidget):
 
     def create_player(self):
 
+        self.mediaPlayer = QMediaPlayer(None, QMediaPlayer.VideoSurface)
+
+        Videowidget = QVideoWidget()
+
+
+        self.openBtn = QPushButten()
+        self.openBtn.setEnabled(False)
+
 
 
 
