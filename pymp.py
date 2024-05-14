@@ -14,13 +14,13 @@ class Window(QWidget):
         self.setWindowTitle("PYmediaPlayer")
         self.setGeometry(350,100, 700,500)
 
-p = self.palette()
-p.setColor(QPalette.Window, Qt.GlobalColor.red)
-self.setPalette(p)
+        p = self.palette()
+        p.setColor(QPalette.Window, Qt.GlobalColor.red)
+        self.setPalette(p)
 
 
 
-def create_player(self):
+    def create_player(self):
 
 
 
