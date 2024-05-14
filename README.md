@@ -1,2 +1,2 @@
-# pymp
-music media player with python
+# [PYmediaPlayer](pymp.py)
+## music media player with python
