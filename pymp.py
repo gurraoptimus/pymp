@@ -27,13 +27,13 @@ class Window(QWidget):
         Videowidget = QVideoWidget()
 
 
-        self.openBtn = QPushButten()
+        self.openBtn = QPushButten() # type: ignore
         self.openBtn.setEnabled(False)
 
 
 
 
-app = QApplication(sys.argv)
+app = QApplication(sys.argv) # type: ignore
 window = Window()
 window.show()
 sys.exit(app.exec_())
