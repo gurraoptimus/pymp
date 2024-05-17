@@ -10,7 +10,7 @@ class Window(QWidget):
     def __init__(self):
         super().__init__()
 
-        self.setWindowIcon(QIcon("player.ico"))
+        self.setWindowIcon(QIcon("icon.ico"))
         self.setWindowTitle("PYmediaPlayer")
         self.setGeometry(350,100, 700,500)
 
