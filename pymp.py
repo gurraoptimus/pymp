@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication, QWidget
+from PyQt5.QtWidgets import QApplication, QWidget, QHBoxLayout, QVBoxLayout
 from PyQt5.QtGui import QIcon, QPalette
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
 from PyQt5.QtMultimediaWidgets import QVideoWidget
@@ -27,10 +27,10 @@ class Window(QWidget):
         Videowidget = QVideoWidget()
 
 
-        self.openBtn = QPushButten() # type: ignore
-        self.openBtn.setEnabled(False)
+        self.openBtn = QPushButten('Open Video') # type: ignore
 
-
+        hbox = QHBoxLayout()
+        hbox.setCon
 
 
 app = QApplication(sys.argv) # type: ignore
