@@ -37,7 +37,7 @@ class Window(QWidget):
 
 
 
-vbox = QVideoWidget()
+        vbox = QVideoWidget()
 
 
 app = QApplication(sys.argv) # type: ignore
