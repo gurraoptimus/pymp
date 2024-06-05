@@ -18,7 +18,7 @@ class Window(QWidget):
         p.setColor(QPalette.Window, Qt.GlobalColor.darkGreen)
         self.setPalette(p)
 
-        self.create_player()
+        #self.create_player()
 
     def create_player(self):
 
