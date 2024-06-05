@@ -30,7 +30,9 @@ class Window(QWidget):
         self.openBtn = QPushButten('Open Video') # type: ignore
 
         hbox = QHBoxLayout()
-        hbox.setCon
+        hbox.setContentsMargins(0,0,0)
+
+        hbox.
 
 
 app = QApplication(sys.argv) # type: ignore
