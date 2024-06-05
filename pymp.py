@@ -32,7 +32,12 @@ class Window(QWidget):
         hbox = QHBoxLayout()
         hbox.setContentsMargins(0,0,0)
 
-        hbox.
+        hbox.addWidget(self.openBtn)
+
+
+
+
+vbox = QVideoWidget()
 
 
 app = QApplication(sys.argv) # type: ignore
