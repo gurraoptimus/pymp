@@ -32,7 +32,7 @@ class Window(QWidget):
 
 
 
-        self.playBtn = QPushButton()
+        self.playBtn = QPushButton() # type: ignore
         self.playBtn.setEnabled(False)
         self.playBtn.setIcon(self.style().standardIcon(QStyle.SP_M))
 
