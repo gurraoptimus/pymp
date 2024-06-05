@@ -24,7 +24,7 @@ class Window(QWidget):
 
         self.mediaPlayer = QMediaPlayer(None, QMediaPlayer.VideoSurface)
 
-        Videowidget = QVideoWidget()
+        QVideowidget = QVideoWidget()
 
 
         self.openBtn = QPushButten('Open Video') # type: ignore
