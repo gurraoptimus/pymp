@@ -15,7 +15,7 @@ class Window(QWidget):
         self.setGeometry(350,100, 700,500)
 
         p = self.palette()
-        p.setColor(QPalette.Window, Qt.GlobalColor.red)
+        p.setColor(QPalette.Window, Qt.GlobalColor.darkGreen)
         self.setPalette(p)
 
 
