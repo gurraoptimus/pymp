@@ -24,7 +24,7 @@ class Window(QWidget):
 
         self.mediaPlayer = QMediaPlayer(None, QMediaPlayer.VideoSurface)
 
-        VideoWidget = QVideoWidget()
+        Videowidget = QVideoWidget()
 
 
         self.openBtn = QPushButten('Open Video') # type: ignore
@@ -37,7 +37,20 @@ class Window(QWidget):
 
 
 
-        vbox = QVideoWidget()
+        vbox = QVBoxLayout()
+
+        vbox.addLayout(hbox)
+
+
+        self.setLayout(vbox)
+
+
+
+
+
+
+
+
 
 
 app = QApplication(sys.argv) # type: ignore
