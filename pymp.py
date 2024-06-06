@@ -37,10 +37,11 @@ class Window(QWidget):
         self.playBtn.setIcon(self.style().standardIcon(QStyle.SP_M))
 
         hbox = QHBoxLayout()
-        hbox.setContentsMargins(0,0,0)
+        hbox.setContentsMargins(0,0,0,0)
 
+        
         hbox.addWidget(self.openBtn)
-
+        hbox.addWidget(self.playBtn)
 
 
 
