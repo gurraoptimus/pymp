@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication, QWidget, QHBoxLayout, QVBoxLayout, QStyle
+from PyQt5.QtWidgets import QApplication, QWidget, QHBoxLayout, QVBoxLayout, QStyle, QSlider
 from PyQt5.QtGui import QIcon, QPalette
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
 from PyQt5.QtMultimediaWidgets import QVideoWidget
@@ -18,7 +18,7 @@ class Window(QWidget):
         p.setColor(QPalette.Window, Qt.darkGreen)
         self.setPalette(p)
 
-        #self.create_player()
+        self.create_player()
 
     def create_player(self):
 
@@ -36,10 +36,13 @@ class Window(QWidget):
         self.playBtn.setEnabled(False)
         self.playBtn.setIcon(self.style().standardIcon(QStyle.SP_M))
 
+        
+        self.slider = QSlider()
+        
+        
         hbox = QHBoxLayout()
         hbox.setContentsMargins(0,0,0,0)
 
-        
         hbox.addWidget(self.openBtn)
         hbox.addWidget(self.playBtn)
 
