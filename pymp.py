@@ -37,7 +37,7 @@ class Window(QWidget):
         self.playBtn.setIcon(self.style().standardIcon(QStyle.SP_M))
 
         
-        self.slider = QSlider()
+        self.slider = QSlider(QtHoriz)
         
         
         hbox = QHBoxLayout()
