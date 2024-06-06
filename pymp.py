@@ -64,4 +64,4 @@ class Window(QWidget):
 app = QApplication(sys.argv) # type: ignore
 window = Window()
 window.show()
-sys.exit(app.exec_())
+sys.exit(app.exec_()) # type: ignore
