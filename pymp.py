@@ -27,12 +27,12 @@ class Window(QWidget):
         Videowidget = QVideoWidget()
 
 
-        self.openBtn = QPushButton('Open Video')
+        self.openBtn = QPushButton('Open Video') # type: ignore
 
 
 
 
-        self.playBtn = QPushButton()
+        self.playBtn = QPushButton() # type: ignore
         self.playBtn.setEnabled(False)
         self.playBtn.setIcon(self.style().standardIcon(QStyle.SP_M))
 
