@@ -18,10 +18,10 @@ class Window(QWidget):
         p.setColor(QPalette.Window, Qt.darkGreen)
         self.setPalette(p)
 
-        self.create_player()
 
     def create_player(self):
 
+        self.create_player()
         self.mediaPlayer = QMediaPlayer(None, QMediaPlayer.VideoSurface)
 
         Videowidget = QVideoWidget()
