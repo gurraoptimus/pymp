@@ -37,7 +37,7 @@ class Window(QWidget):
         self.playBtn.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
 
         
-        self.slider = QSlider(QtHorizontal)
+        self.slider = QSlider(Qt.Horizontal)
         self.slider.setRange(0,0)
         
         
