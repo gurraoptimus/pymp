@@ -34,10 +34,11 @@ class Window(QWidget):
 
         self.playBtn = QPushButton() # type: ignore
         self.playBtn.setEnabled(False)
-        self.playBtn.setIcon(self.style().standardIcon(QStyle.SP_M))
+        self.playBtn.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
 
         
-        self.slider = QSlider(QtHoriz)
+        self.slider = QSlider(QtHorizontal)
+        self.slider.setRange(0,0)
         
         
         hbox = QHBoxLayout()
@@ -67,4 +68,4 @@ class Window(QWidget):
 app = QApplication(sys.argv) # type: ignore
 window = Window()
 window.show()
-sys.exit(app.exec_()) # type: ignore
+sys.exit(app.exec_())
