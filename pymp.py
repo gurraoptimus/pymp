@@ -46,10 +46,12 @@ class Window(QWidget):
 
         hbox.addWidget(self.openBtn)
         hbox.addWidget(self.playBtn)
+        hbox.addWidget(self.slider)
 
 
 
         vbox = QVBoxLayout()
+        vbox.addWidget(Videowidget)
 
         vbox.addLayout(hbox)
 
