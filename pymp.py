@@ -1,8 +1,8 @@
-from PyQt5.QtWidgets import QApplication, QWidget, QHBoxLayout, QVBoxLayout, QStyle, QSlider, QPushButton
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QVBoxLayout, QStyle, QSlider, QFileDialog
 from PyQt5.QtGui import QIcon, QPalette
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
 from PyQt5.QtMultimediaWidgets import QVideoWidget
-from PyQt5.QtCore import Qt
+from PyQt5.QtCore import Qt, QUrl
 import sys
 
 
@@ -61,7 +61,8 @@ class Window(QWidget):
 
 
 
-
+def open_file(self):
+    filename, _ =
 
 
 
