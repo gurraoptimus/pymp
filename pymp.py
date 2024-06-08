@@ -66,7 +66,7 @@ def open_file(self):
 
 
     if filename != '':
-        self.mediaPlayer.setMedia(QMediaContent(QUrl.from))
+        self.mediaPlayer.setMedia(QMediaContent(QUrl.fromLocalFile(filename)))
 
 app = QApplication(sys.argv)
 window = Window()
