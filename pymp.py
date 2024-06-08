@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication, QWidget, QHBoxLayout, QVBoxLayout, QStyle, QSlider
+from PyQt5.QtWidgets import QApplication, QWidget, QHBoxLayout, QVBoxLayout, QStyle, QSlider, QPushButton
 from PyQt5.QtGui import QIcon, QPalette
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
 from PyQt5.QtMultimediaWidgets import QVideoWidget
@@ -18,21 +18,21 @@ class Window(QWidget):
         p.setColor(QPalette.Window, Qt.darkGreen)
         self.setPalette(p)
 
+        self.create_player()
 
     def create_player(self):
 
-        self.create_player()
         self.mediaPlayer = QMediaPlayer(None, QMediaPlayer.VideoSurface)
 
         Videowidget = QVideoWidget()
 
 
-        self.openBtn = QPushButton('Open Video') # type: ignore
+        self.openBtn = QPushButton('Open Video')
 
 
 
 
-        self.playBtn = QPushButton() # type: ignore
+        self.playBtn = QPushButton()
         self.playBtn.setEnabled(False)
         self.playBtn.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
 
