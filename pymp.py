@@ -28,8 +28,7 @@ class Window(QWidget):
 
 
         self.openBtn = QPushButton('Open Video')
-
-
+        self.openBtn.clicked.connect(self.open_file)
 
 
         self.playBtn = QPushButton()
@@ -67,6 +66,7 @@ def open_file(self):
 
     if filename != '':
         self.mediaPlayer.setMedia(QMediaContent(QUrl.fromLocalFile(filename)))
+        self.playBtn.setEnabled(True)
 
 app = QApplication(sys.argv)
 window = Window()
