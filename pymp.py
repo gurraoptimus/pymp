@@ -65,8 +65,8 @@ def open_file(self):
     filename, _ = QFileDialog.getOpenFileName(self, "Open Video")
 
 
-    if
-
+    if filename != '':
+        self.mediaPlayer.setMedia(QMediaContent(QUrl.from))
 
 app = QApplication(sys.argv)
 window = Window()
