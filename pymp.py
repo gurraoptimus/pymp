@@ -62,13 +62,13 @@ class Window(QWidget):
 
 
 def open_file(self):
-    filename, _ =
+    filename, _ = QFileDialog.getOpenFileName(self, "Open Video")
 
 
+    if
 
 
-
-app = QApplication(sys.argv) # type: ignore
+app = QApplication(sys.argv)
 window = Window()
 window.show()
 sys.exit(app.exec_())
