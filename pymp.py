@@ -51,6 +51,10 @@ class Window(QWidget):
             self.mediaPlayer.setMedia(QMediaContent(QUrl.fromLocalFile(filename)))
             self.playBtn.setEnabled(True)
 
+    #def play_video(self):
+        #if self.
+
+
 app = QApplication(sys.argv)
 window = Window()
 window.show()
