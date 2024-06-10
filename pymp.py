@@ -53,7 +53,7 @@ class Window(QWidget):
             self.playBtn.setEnabled(True)
 
     def play_video(self):
-        if self.mediaPlayer.state() == QMediaPlayer.playingState:
+        if self.mediaPlayer.state() == QMediaPlayer.PlayingState:
             self.mediaPlayer.pause()
         
         else:
