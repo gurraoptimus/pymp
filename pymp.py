@@ -58,6 +58,10 @@ class Window(QWidget):
         
         else:
             self.mediaPlayer.play()
+    def mediastate_changed(self, state):
+        if self.mediaPlayer.state() == QMediaPlayer.PlayingState:
+            self.playBtn.setIcon
+
 
 app = QApplication(sys.argv)
 window = Window()
