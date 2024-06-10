@@ -60,7 +60,7 @@ class Window(QWidget):
             self.mediaPlayer.play()
     def mediastate_changed(self, state):
         if self.mediaPlayer.state() == QMediaPlayer.PlayingState:
-            self.playBtn.setIcon
+            self.playBtn.setIcon(self.style().standardIcon(QStyle.SP_MediaPause))
 
 
 app = QApplication(sys.argv)
