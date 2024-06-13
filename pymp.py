@@ -46,6 +46,7 @@ class Window(QWidget):
         vbox.addLayout(hbox)
         
         self.mediaPlayer.setVideoOutput()
+        
         self.setLayout(vbox)
 
     def open_file(self):
