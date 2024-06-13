@@ -42,8 +42,10 @@ class Window(QWidget):
 
         vbox = QVBoxLayout()
         vbox.addWidget(Videowidget)
+ 
         vbox.addLayout(hbox)
-
+        
+        self.mediaPlayer.setVideoOutput()
         self.setLayout(vbox)
 
     def open_file(self):
@@ -66,6 +68,9 @@ class Window(QWidget):
    
     def position_changed(self, position):
         self.slider.setValue(position)
+
+    def duration_changed(self, duration):
+        self.slider.setRange(0, duration)
 
 app = QApplication(sys.argv)
 window = Window()
