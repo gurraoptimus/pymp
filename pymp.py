@@ -18,6 +18,11 @@ class Window(QWidget):
         self.setPalette(p)
 
         self.create_player()
+        
+        self.mediaPlayer = QMediaPlayer(None, QMediaPlayer.VideoSurface)
+        self.mediaPlayer.positionChanged.connect(self.position_changed)
+        self.mediaPlayer.durationChanged.connect(self.duration_changed)
+        self.mediaPlayer.mediaStatusChanged.connect(self.mediastate_changed)
 
     def create_player(self):
         self.mediaPlayer = QMediaPlayer(None, QMediaPlayer.VideoSurface)
