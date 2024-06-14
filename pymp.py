@@ -50,7 +50,7 @@ class Window(QWidget):
  
         vbox.addLayout(hbox)
         
-        #self.mediaPlayer.setVideoOutput()
+        self.mediaPlayer.setVideoOutput(Videowidget)
         
         self.setLayout(vbox)
 
