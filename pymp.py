@@ -19,7 +19,6 @@ class Window(QWidget):
 
         self.create_player()
         
-       #
     def create_player(self):
         self.mediaPlayer = QMediaPlayer(None, QMediaPlayer.VideoSurface)
         Videowidget = QVideoWidget()
