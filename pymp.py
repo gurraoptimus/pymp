@@ -90,8 +90,8 @@ class PympStyleWindow(QWidget):
         self.playBtn.setEnabled(True)
         self.playBtn.clicked.connect(self.play_video)
 
-        self.playBtn = QPushButton('Pause')
-        self.playBtn.setDisabled(False)
+        self.playBtn = QPushButton('')
+        self.playBtn.setDisabled(True)
         self.playBtn.clicked.connect(self.pause_video)
 
         self.fullscreenBtn = QPushButton('Fullscreen')
@@ -129,10 +129,10 @@ class PympStyleWindow(QWidget):
     def play_video(self):
         if self.mediaPlayer.state() == QMediaPlayer.PlayingState:
             self.mediaPlayer.pause()
-            self.playBtn.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
+            self.playBtn.setIcon(self.style().standardIcon(QStyle.SP_MediaPause))
         else:
             self.mediaPlayer.play()
-            self.playBtn.setIcon(self.style().standardIcon(QStyle.SP_MediaPause))
+            self.playBtn.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
 
     def pause_video(self):
         if self.mediaPlayer.state() == QMediaPlayer.PlayingState:
