@@ -159,6 +159,6 @@ class PympStyleWindow(QWidget):
             self.fullscreenBtn.setText('Fullscreen')
 
 app = QApplication(sys.argv)
-window = SpotifyStyleWindow()
+window = PympStyleWindow()
 window.show()
 sys.exit(app.exec_())
