@@ -1,11 +1,11 @@
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QVBoxLayout, QSlider, QFileDialog
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QHBoxLayout, QVBoxLayout, QStyle, QSlider, QFileDialog
 from PyQt5.QtGui import QIcon, QPalette, QColor, QFont
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
 from PyQt5.QtMultimediaWidgets import QVideoWidget
 from PyQt5.QtCore import Qt, QUrl, QPropertyAnimation, QRect
 import sys
 
-class SpotifyStyleWindow(QWidget):
+class PympStyleWindow(QWidget):
     def __init__(self):
         super().__init__()
 
@@ -13,12 +13,12 @@ class SpotifyStyleWindow(QWidget):
         self.setWindowTitle("PYmediaPlayer")
         self.setGeometry(350,100, 700,500)
 
-        # Apply Spotify-like colors
+        # Apply pymp-like colors
         p = self.palette()
         p.setColor(QPalette.Window, QColor("#121212"))  # Dark background
         self.setPalette(p)
 
-        # Spotify font
+        # pymp font
         self.setFont(QFont("Arial", 10))
 
         self.setStyleSheet("""
@@ -125,16 +125,16 @@ class SpotifyStyleWindow(QWidget):
     def play_video(self):
         if self.mediaPlayer.state() == QMediaPlayer.PlayingState:
             self.mediaPlayer.pause()
-            self.playBtn.setText('Play')
+            self.playBtn.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
         else:
             self.mediaPlayer.play()
-            self.playBtn.setText('Pause')
+            self.playBtn.setIcon(self.style().standardIcon(QStyle.SP_MediaPause))
 
     def mediastate_changed(self, state):
         if self.mediaPlayer.state() == QMediaPlayer.PlayingState:
-            self.playBtn.setText('Pause')
+            self.playBtn.setIcon(self.style().standardIcon(QStyle.SP_MediaPause))
         else:
-            self.playBtn.setText('Play')
+            self.playBtn.setIcon(self.style().standardIcon(QStyle.SP_MediaPlay))
 
     def position_changed(self, position):
         self.slider.setValue(position)
