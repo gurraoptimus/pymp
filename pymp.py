@@ -86,9 +86,11 @@ class PympStyleWindow(QWidget):
         self.openBtn = QPushButton('Open')
         self.openBtn.clicked.connect(self.open_file)
 
-        self.playBtn = QPushButton('play_video')
+        self.playBtn = QPushButton('Play')
         self.playBtn.setEnabled(True)
         self.playBtn.clicked.connect(self.play_video)
+        self.playBtn = QPushButton('Pause')
+        self.playBtn.setEnabled(True)
         self.playBtn.clicked.connect(self.pause_video)
 
         self.fullscreenBtn = QPushButton('Fullscreen')
