@@ -121,7 +121,7 @@ class PympStyleWindow(QWidget):
         self.mediaPlayer.mediaStatusChanged.connect(self.pause_video)
 
     def open_file(self):
-        filename, _ = QFileDialog.getOpenFileName(self, "Open Video")
+        filename, _ = QFileDialog.getOpenFileName(self, "Open")
         if filename != '':
             self.mediaPlayer.setMedia(QMediaContent(QUrl.fromLocalFile(filename)))
             self.playBtn.setEnabled(True)
